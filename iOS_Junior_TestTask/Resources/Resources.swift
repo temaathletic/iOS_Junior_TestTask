@@ -20,7 +20,7 @@ enum Resources {
     enum Gender: String, CaseIterable {
         case noSpeciField = "Не указано"
         case man = "Мужской"
-        case woman = "Женский"
+        case woman = "Шлюха"
     }
     
     enum Fonts {
