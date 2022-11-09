@@ -9,7 +9,7 @@ import Foundation
 
 struct UserModel {
     var firstName = "artem"
-    var secondName = ""
+    var secondName = "zaytsev"
     var thirdName = ""
     var birthsday = ""
     var gender = ""
