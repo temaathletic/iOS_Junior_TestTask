@@ -8,8 +8,8 @@
 import Foundation
 
 struct UserModel {
-    var firstName = "artem"
-    var secondName = "zaytsev"
+    var firstName = ""
+    var secondName = ""
     var thirdName = ""
     var birthsday = ""
     var gender = ""
