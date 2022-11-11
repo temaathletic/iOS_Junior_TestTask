@@ -50,7 +50,7 @@ final class TextViewTableViewCell: UITableViewCell {
     }
     
     public func getCellValue() -> String {
-        nameTextView.text
+        nameTextView.text == "Введите данные" ? "" : nameTextView.text
     }
 }
 

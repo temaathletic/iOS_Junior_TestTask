@@ -13,7 +13,7 @@ enum Resources {
         case firstName = "Имя"
         case secondName = "Фамилия"
         case thirdName = "Отчество"
-        case birthsday = "Дата Рождения"
+        case birthday = "Дата Рождения"
         case gender = "Пол"
     }
     

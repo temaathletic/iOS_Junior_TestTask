@@ -37,4 +37,22 @@ extension UIViewController {
         
         present(alertController, animated: true)
     }
+    
+    func presesntUnchangeAlert(completionHandler: @escaping (Bool) -> Void) {
+        
+        let alertController = UIAlertController(title: "Данные не были изменены",
+                                                message: "Вы желаете выйти или продолжить редактирование профиля",
+                                                preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "Выйти", style: .default) {_ in
+            completionHandler(false)
+        }
+        let skipAction = UIAlertAction(title: "Продолжить", style: .default) {_ in
+            completionHandler(true)
+        }
+
+        alertController.addAction(saveAction)
+        alertController.addAction(skipAction)
+        
+        present(alertController, animated: true)
+    }
 }

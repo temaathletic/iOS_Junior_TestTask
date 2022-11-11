@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		844F194E291568560082FDFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F194D291568560082FDFB /* AppDelegate.swift */; };
-		844F1952291568560082FDFB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F1951291568560082FDFB /* MainTableViewController.swift */; };
+		844F1952291568560082FDFB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F1951291568560082FDFB /* MainViewController.swift */; };
 		844F1957291568580082FDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844F1956291568580082FDFB /* Assets.xcassets */; };
 		844F195A291568580082FDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844F1958291568580082FDFB /* LaunchScreen.storyboard */; };
 		844F1967291571B70082FDFB /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F1966291571B70082FDFB /* Resources.swift */; };
@@ -28,13 +28,14 @@
 		84B56AA7291AC1DC000A03C7 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56AA6291AC1DC000A03C7 /* UserDefaultsHelper.swift */; };
 		84B56AA9291AC908000A03C7 /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56AA8291AC908000A03C7 /* UIViewController + Extensions.swift */; };
 		84B56AAB291ACE9C000A03C7 /* UIButtonItem + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B56AAA291ACE9C000A03C7 /* UIButtonItem + Extension.swift */; };
+		84F02129291EBB0100E28B9C /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F02128291EBB0100E28B9C /* MainTableView.swift */; };
 		84FD9FBE291ABECB00F1EE58 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD9FBD291ABECB00F1EE58 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		844F194A291568560082FDFB /* iOS_Junior_TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Junior_TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844F194D291568560082FDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		844F1951291568560082FDFB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		844F1951291568560082FDFB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		844F1956291568580082FDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844F1959291568580082FDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844F195B291568580082FDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		84B56AA6291AC1DC000A03C7 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		84B56AA8291AC908000A03C7 /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 		84B56AAA291ACE9C000A03C7 /* UIButtonItem + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButtonItem + Extension.swift"; sourceTree = "<group>"; };
+		84F02128291EBB0100E28B9C /* MainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
 		84FD9FBD291ABECB00F1EE58 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +132,7 @@
 		844F196429156BEA0082FDFB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				844F1951291568560082FDFB /* MainTableViewController.swift */,
+				844F1951291568560082FDFB /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +148,10 @@
 		84622C30291822F90062A040 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84622C3A291852DE0062A040 /* GenderPickerView.swift */,
+				84622C40291981530062A040 /* EditingTableView.swift */,
+				84622C3C291856050062A040 /* GenderTextField.swift */,
+				84622C342918252C0062A040 /* NameTextView.swift */,
 				84622C312918230A0062A040 /* Cells */,
 			);
 			path = Views;
@@ -156,10 +162,7 @@
 			children = (
 				84622C32291823320062A040 /* TextViewTableViewCell.swift */,
 				84622C36291834D40062A040 /* DataPickerTableViewCell.swift */,
-				84622C3A291852DE0062A040 /* GenderPickerView.swift */,
 				84622C38291850F50062A040 /* PickerTableViewCell.swift */,
-				84622C3C291856050062A040 /* GenderTextField.swift */,
-				84622C40291981530062A040 /* EditingTableView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				84710FAB2917E73100C54E0F /* MainTableViewCell.swift */,
+				84F02128291EBB0100E28B9C /* MainTableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				84622C30291822F90062A040 /* Views */,
-				84622C342918252C0062A040 /* NameTextView.swift */,
 				84710FB22917F55000C54E0F /* Contrtollers */,
 			);
 			path = EditingModule;
@@ -300,13 +303,14 @@
 				84710FB02917EBBB00C54E0F /* UIView + Extensions.swift in Sources */,
 				846D45DD291BEEBC00F41584 /* UITableView + Extension.swift in Sources */,
 				84622C39291850F50062A040 /* PickerTableViewCell.swift in Sources */,
+				84F02129291EBB0100E28B9C /* MainTableView.swift in Sources */,
 				84B56AA7291AC1DC000A03C7 /* UserDefaultsHelper.swift in Sources */,
 				844F1967291571B70082FDFB /* Resources.swift in Sources */,
 				84710FB42917F56A00C54E0F /* EditingViewController.swift in Sources */,
 				84622C352918252C0062A040 /* NameTextView.swift in Sources */,
 				84B56AA9291AC908000A03C7 /* UIViewController + Extensions.swift in Sources */,
 				84622C3B291852DE0062A040 /* GenderPickerView.swift in Sources */,
-				844F1952291568560082FDFB /* MainTableViewController.swift in Sources */,
+				844F1952291568560082FDFB /* MainViewController.swift in Sources */,
 				846D45DF291BF64A00F41584 /* String + Extension.swift in Sources */,
 				846D45E1291BF6EB00F41584 /* Date + Extensions.swift in Sources */,
 				84710FAC2917E73100C54E0F /* MainTableViewCell.swift in Sources */,
