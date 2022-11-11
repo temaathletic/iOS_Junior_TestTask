@@ -50,24 +50,11 @@ final class EditingViewController : UIViewController {
         
         let editUserModel = editingTableView.getUserModel()
         
-        if authFields(model: editUserModel) != true {
-            presentSimpleAlert(title: "Выполнено", message: "Все поля заполнены")
+        if authFields(model: editUserModel) {
+            presentSimpleAlert(title: "Выполнено", message: "Все поля заполнены.")
         } else {
-            presentSimpleAlert(title: "Ошибка", message: "Заполните недостающие поля")
+            presentSimpleAlert(title: "Ошибка", message: "Заполните недостающие поля.")
         }
-
-    }
-    
-    
-    private func authFields(model: UserModel) -> Bool {
-        if userModel.firstName == "" ||
-            userModel.secondName == "" ||
-            userModel.birthsday == "" ||
-            userModel.gender == "" ||
-            userModel.gender == "Не  указано" {
-            return false
-        }
-        return true
     }
     
     @objc private func backButtonTapped() {
@@ -91,6 +78,18 @@ final class EditingViewController : UIViewController {
             }
         }
     }
+    
+    private func authFields(model: UserModel) -> Bool {
+        if model.firstName == "Введите данные" ||
+            model.secondName == "Введите данные" ||
+            model.birthsday == "" ||
+            model.gender == "" ||
+            model.gender == "Не указано" {
+            return false
+        }
+        return true
+    }
+    
 }
 //MARK: - Set Constraints
 

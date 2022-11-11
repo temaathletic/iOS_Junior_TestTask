@@ -47,14 +47,12 @@ final class MainTableViewController: UITableViewController {
     }
     
     public func changeUserModel(model: UserModel) {
-        // ssave new model
+        // save new model
         saveNewModel(model)
 
         //refresh label
         userModel = model
         tableView.reloadData()
-        
-        
     }
 }
 

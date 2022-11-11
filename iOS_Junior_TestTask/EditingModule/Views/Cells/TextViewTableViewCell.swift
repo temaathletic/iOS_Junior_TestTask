@@ -46,7 +46,7 @@ final class TextViewTableViewCell: UITableViewCell {
         nameLabel.text = name
         nameTextView.isScrollEnabled = scrollEnable
         nameTextView.text = value == "" ? "Введите данные" : value
-        nameTextView.textColor = .lightGray
+        nameTextView.textColor = value == "" ? .lightGray : .black
     }
     
     public func getCellValue() -> String {
@@ -67,7 +67,7 @@ extension TextViewTableViewCell: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == .lightGray {
             textView.text = nil
-            
+            textView.textColor = .black
         }
     }
     

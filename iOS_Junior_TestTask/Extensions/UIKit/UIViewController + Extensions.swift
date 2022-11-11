@@ -10,21 +10,14 @@ import UIKit
 extension UIViewController {
     
     func presentSimpleAlert(title: String, message: String?) {
-        let alertController = UIAlertController(title: "Выполнено",
-                                                message: "Все обязательныые поля заполнены",
+
+        let alertController = UIAlertController(title: title,
+                                                message: message,
                                                 preferredStyle: .alert)
-        
-        
-        let errorAlertController = UIAlertController(title: "Ощибка",
-                                                message: "Все обязательныые поля заполнены",
-                                                preferredStyle: .alert)
-        
-        let okActioon = UIAlertAction(title: "Ок", style: .default)
-        
-        alertController.addAction(okActioon)
-        
+        let okAction = UIAlertAction(title: "Ок", style: .default)
+
+        alertController.addAction(okAction)
         present(alertController, animated: true)
-        
     }
     
     func presesntChangeAlert(completionHandler: @escaping (Bool) -> Void) {

@@ -13,7 +13,7 @@ final class MainTableViewCell: UITableViewCell {
     
     private var valueLabel: UILabel = {
         let label = UILabel()
-        label.text = "Test"
+        label.text = "Нет данных"
         label.font = Resources.Fonts.avenirNextRegular(with: 18)
         label.textAlignment = .right
         label.numberOfLines = 0

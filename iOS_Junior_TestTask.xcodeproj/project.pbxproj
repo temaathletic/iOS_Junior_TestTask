@@ -156,6 +156,7 @@
 			children = (
 				84622C32291823320062A040 /* TextViewTableViewCell.swift */,
 				84622C36291834D40062A040 /* DataPickerTableViewCell.swift */,
+				84622C3A291852DE0062A040 /* GenderPickerView.swift */,
 				84622C38291850F50062A040 /* PickerTableViewCell.swift */,
 				84622C3C291856050062A040 /* GenderTextField.swift */,
 				84622C40291981530062A040 /* EditingTableView.swift */,
@@ -197,7 +198,6 @@
 			children = (
 				84622C30291822F90062A040 /* Views */,
 				84622C342918252C0062A040 /* NameTextView.swift */,
-				84622C3A291852DE0062A040 /* GenderPickerView.swift */,
 				84710FB22917F55000C54E0F /* Contrtollers */,
 			);
 			path = EditingModule;
